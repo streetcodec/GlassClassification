@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <form action="{% url 'result' %}">
+
+        {% csrf_token %}
+
+        RI :<input type="text" required name="RI"> <br> <br>
+        Na :<input type="text" required name="Na"> <br> <br>
+        Mg :<input type="text" required name="Mg"> <br> <br>
+        Al :<input type="text" required name="Al"> <br> <br>
+        Si :<input type="text" required name="Si"> <br> <br>
+        K  :<input type="text" required name="K"> <br> <br>
+        Ca :<input type="text" required name="Ca"> <br> <br>
+        Ba :<input type="text" required name="Ba"> <br> <br>
+        Fe :<input type="text" required name="Fe"> <br> <br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+
+
+</body>
+</html>
